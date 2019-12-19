@@ -1,0 +1,15 @@
+import numpy as np
+print("todos los datos deben estar entre 1 y 20")
+
+x1=float(input("ingrece la coordenada en x de una de la esquina superiore izquierda: "))
+y1=float(input("ingrece la coordenada en y de una de la esquina superiore izquierda: "))
+
+x2=float(input("ingrece la coordenada en x de una de la esquina superior derecha: "))
+y2=float(input("ingrece la coordenada en y de una de la esquina superior derecha : "))
+
+a=((y1+y2)*(x1-x2))/2
+
+if a<0:
+    a=a*-1
+
+print ("El area del trapecio es : ",a)
